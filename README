@@ -1,0 +1,39 @@
+This is a work in progress based on PyFIT 0.8a2.
+The intend is to merge this code back into PyFIT.
+
+Design goals/ideas :
+* A table is a list of lists.
+* Flow mode for DoFixtures part of design.
+* Eliminate need for _typeDict
+* uses a XML parser (minidom)
+* unit tests use wiki syntax instead of HTML.
+* most unit tests run without HTML dependency.
+* uses and integrates with Twisted.
+
+What works so far? (in about 700 lines of Python):
+* A FitServer which works with Fitnesse.
+* ColumnFixtures and RowFixtures.
+* simple DoFixtures.
+* Setup in suites.
+
+-----------------------------------------------------------------
+
+The original FIT framework is by Ward Cunningham (fit.c2.com)
+The original port to Python is by Simon Michael.
+The base products are copyright by Ward Cunningham (Java version of
+FIT), Simon Michael (Python port of an early version of FIT), 
+James Shore (current versions of Java FIT) and
+Object Mentor (Fitnesse www.fitnesse.org).
+FitLibrary was developed and is copyright by Rick Mugridge.
+All the rest of the code is copyright 2003-2006 by John Roth.
+See the comments at the beginning of each Python module for the
+copyright claims that apply to that module.
+
+-----------------------------------------------------------------
+
+All code is distributed under the GPL, version 2. See COPYING
+in the root directory and the DistDoc directory for a full
+copy of the GNU General Public License. All code in
+this release is source, there are no compiled executables.
+
+-----------------------------------------------------------------
